@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center ;
+}
+
+header{
+    background-color: rgb(74, 250, 83);
+}
+h1{
+    font-size: 30px; text-align: center;
+}
+p{
+text-align: center;
+}
+footer{
+    text-align: center;
+    background-color: #ccc;
+}
+a{
+    text-decoration: none;
+}

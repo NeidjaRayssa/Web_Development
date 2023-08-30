@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Exemplo de formulário</h1>
+    </header>
+
+    <article>
+        <!--inicio do formulário-->
+        <form action="#">
+            <!--label: para criar rotulo-->
+            <label for="nome">Nome:</label>
+            <!--required: torna o preenchimento obrigatorio-->
+            <input type="text" name="nome" id="nome" required>
+            <br><br>
+
+            <label for="idade">Idade:</label>
+            <!--id: vincula o input com o for do label-->
+            <input type="number" name="idade" id="idade">
+            <br><br>
+
+            <label for="cor">Sua cor favorita:</label>
+            <!--type: define o tipo de input-->
+            <input type="color" name="cor" id="cor">
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email">
+            <br><br>
+<!-- value: é o valor que será escrito no botão-->
+            <input type="submit" value="Enviar!">
+
+        </form>
+    </article>
+
+    <br>
+    <hr>
+    <footer>
+       <small>by Neidja Rayssa &copy;</small>
+
+    </footer>
+</body>
+</html>
