@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: gainsboro;
+    overflow-x: auto;
+}
+
+#contentSlide{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-color: yellowgreen;
+    z-index: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+#contentSlide::-webkit-scrollbar{
+    display: none;
+}
+
+#contentSlide .block{
+    position: relative;
+    top: 25px;
+    margin:2px;
+    width: 500px;
+    height: 250px;
+    background-color: orangered;
+    display: inline-block;
+}
+
+.block img{
+    
+    height: 100%;
+    object-fit: cover;
+}
+
+#bnt-left{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 80px;
+    width: 50px;
+    line-height: 80px;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.397);
+    cursor: pointer;
+    user-select: none;
+}
+
+#bnt-right{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    height: 80px;
+    width: 50px;
+    line-height: 80px;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.397);
+    cursor: pointer;
+    user-select: none;
+}
+
+
