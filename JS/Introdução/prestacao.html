@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Prestações</title>
+</head>
+<body>
+    <script>
+        let nome, produto, valor, parcelas;
+        let valorTotal;
+        const juros = 0.1;
+
+        nome = prompt('Informe seu nome');
+        produto = prompt('Qual produto você comprou?');
+        valor = +prompt('Quanto custou?');
+        parcelas = prompt('Quantas parcelas?');
+
+        document.write(`Olá ${nome} <br><br>`);
+        document.write(`você comprou um(a) ${produto} <br>`);
+        document.write(`No valor de: R$${valor} <br>`);
+        document.write(`E parcelou em ${parcelas} x <br>`);
+    </script>
+</body>
+</html>

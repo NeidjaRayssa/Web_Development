@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .baby{
+            width: 350px;
+            height: 350px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //declarando variaveis
+        var acessoGlobal; //é o tipo que pode ser acessada em todo programa
+        let acessoLocal; //pode ser acessada apenas no escopo em que nasceu
+        const naoMuda = "esse valor é imutável"; //variável do tipo const precisa ser inicializada e não pode ser alterada
+
+        let nome, idade, altura;
+        let num1 = 3, num2 = 6, num3 = 9;
+        var txt1 = 'Que', txt2 = 'Calor', txt3 = 'Danado';
+        const cachorro = 'AuAu';
+
+        nome = prompt('Diga seu nome');
+        idade = prompt('Diga sua idade');
+
+        window.document.write('<h3> Salvee,' + ' ' + nome + '!</h3>');
+        //modo abreviado
+        document.write(nome + ', você tem:'  + idade + ' ' + 'anos' + '<br>');
+        document.write('<br>');
+        document.write('Clique na imagem para saber quantos filhos você vai ter: <br>');
+        document.write('<img class="baby" src="baby.jpg"/>');
+
+        //armazenando a imagem no lado JS
+        let imgClique =  document.querySelector('.baby');
+        imgClique.addEventListener('click', function(){
+            var qntdFilhos = Math.floor(Math.random() * 10);
+           document.write(nome + ', você apesar de já ter' + idade + ' anos,');
+           document.write('<br> seu karma é ter' + qntdFilhos + 'de filhos correndo atrás de você');
+           document.write('<br> HAHAHA!');
+        })
+
+       
+
+
+            </script>
+</body>
+</html>

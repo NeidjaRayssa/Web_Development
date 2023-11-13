@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saque</title>
+</head>
+<body>
+    <script>
+        //declarar as variaveis
+        let nome, deposito, saque;
+
+        //recebo os valores do usuário (prompt)
+        nome = prompt('Digite seu nome');
+        deposito = prompt('Quanto deseja depósitar?');
+        saque = prompt('Quanto deseja sacar?');
+
+        //exibo as informações no documento
+        document.write(`Olá ${nome}, você depositou: R$${deposito} <br><br>`);
+        document.write(`Situação . . . <br>`);
+        document.write(`R$${deposito} - R$${saque} <br>`);
+        document.write(`Seu saldo é de: R$${deposito-saque}`);
+    </script>
+</body>
+</html>

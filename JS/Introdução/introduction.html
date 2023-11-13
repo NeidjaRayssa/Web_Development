@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JavaScript</title>
+</head>
+<body>
+
+
+    <h1>Salve JavaScript</h1>
+    <p>Esse parágrafo foi inserido via HTML</p>
+    <span class="rosa"></span>
+
+
+
+<h3> Informações</h3>
+<span>
+<strong class="nome">Nome:</strong> <br>
+<strong class="nascimento">nascimento:</strong> <br>
+<strong class="signo">Signo:</strong> <br>
+<strong class="contatos">Contatos:</strong> <br>
+</span>
+<ul>
+    <li>Email:</li>
+    <li>Número:</li>
+</ul>
+
+
+
+  
+
+    <script>
+
+        /*função nativa de subir alertas
+        alert('Quer ganhar 1000 reais?');
+        alert('siga os passos abaixo e ganhe!');*/
+
+         /*função nativa de coletar dados*/
+         prompt('Seu nome:');
+         prompt('Data de nascimento:');
+
+         /*função nativa de confirmação
+         confirm('As respostas são verdadeiras?');*/
+
+         /*declarando uma variável (caixinha)*/
+         var nome;
+
+         /*Associando uma função a uma variável*/
+         nome = prompt('Novamente digite seu nome');
+
+         var boxRosa = document.querySelector('.rosa');
+         boxRosa.innerHTML = 'Seja bem vindo ' + nome; 
+
+    </script>
+</body>
+</html>
